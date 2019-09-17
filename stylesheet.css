@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/* nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(231, 226, 221);
+  padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100vw;
+  height: 60px;
+}
+.nav-center div {
+  margin: 3px;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1.5rem;
+}
+.colored {
+  color: #f09d51;
+}
+.btn {
+  border: none;
+  background-color: #f09d51;
+  padding: 6px 8px;
+  font-size: 1rem;
+  outline: none;
+  color: white;
+  vertical-align: bottom;
+}
+.cart-counter {
+  position: relative;
+}
+.cart-items {
+  position: absolute;
+  background-color: #f09d51;
+  padding: 0 6px;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
+  top: -8px;
+  right: -5px;
+  font-size: 1rem;
+}
+.cart-icon {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  vertical-align: bottom;
+}
+/* header */
+header {
+  background: url(images/back.jpg) center/cover no-repeat;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  background-color: rgb(231, 226, 221, 0.8);
+
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+}
+.banner-title {
+  font-size: 4.5rem;
+  letter-spacing: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.banner h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.shop-btn {
+  border: none;
+  background-color: #f09d51;
+  padding: 5px 14px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* About section */
+section.about {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 0;
+}
+section.about h2 {
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+.about-text-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+.about-text-center p {
+  text-align: justify;
+  padding: 10px;
+}
+
+/* Meal section */
+section.meal {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 3rem 0;
+  text-align: center;
+  padding: 0;
+}
+section.meal h2 {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.meal-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.meal-container img {
+  display: block;
+  width: 100%;
+}
+.single-meal img {
+  height: 150px;
+}
+.single-meal {
+  position: relative;
+  overflow: hidden;
+  transition: linear all 0.3s;
+}
+.single-meal:hover {
+  opacity: 0.7;
+}
+.cart-bag {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  border: none;
+  text-transform: uppercase;
+  background-color: #f09d51;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  transform: translateX(101%);
+  outline: none;
+}
+.single-meal:hover .cart-bag {
+  transform: translateX(0%);
+}
+.cart-bag a {
+  color: black;
+}
+.cart-bag:hover,
+.cart-bag a:hover {
+  color: white;
+}
+.meal h3 {
+  text-transform: uppercase;
+  font-size: 1.8vw;
+  margin-top: 1rem;
+  color: #f09d51;
+}
+.meal h4 {
+  margin-top: 0.7rem;
+  letter-spacing: 0.5rem;
+}
+/* footer */
+footer {
+  background-color: #f09d51;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
