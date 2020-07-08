@@ -1,1 +1,1 @@
-ALC 4.0 mobile webtrack project... A food resturant website
+ALC 4.0 mobile webtrack project. A food resturant website.
